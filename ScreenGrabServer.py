@@ -41,8 +41,8 @@ def main(host='0.0.0.0', port=9999):
             print('Client connected IP:', addr)
             thread = Thread(target=retrieve_screenshot, args=(conn,))
             thead.start()
-        finally:
-            sock.close()
+    finally:
+        sock.close()
 
 
 if __name__ == '__main__':
