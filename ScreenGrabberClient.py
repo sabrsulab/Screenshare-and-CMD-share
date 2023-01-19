@@ -44,8 +44,8 @@ def main(host='127.0.0.1', port=9999):
                 screen.blit(img, (0,0))
                 pygame.display.flip()
                 clock.tick(60)
-            finally:
-                sock.close()
+    finally:
+        sock.close()
 
     if __name__ == '__main__':
         main()
